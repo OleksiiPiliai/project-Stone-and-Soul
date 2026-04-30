@@ -1,1 +1,76 @@
-<h1>test</h1>
+<section>
+  <div class="container">
+    <div>
+      <p>Connect</p>
+      <h2>Order your unique jewelry</h2>
+      <p>We'd love to hear more details from you!</p>
+    </div>
+    <ul>
+      <li>
+        <svg class="" width="32" height="32">
+          <use href="../img/symbol-defs.svg#icon-envelope"></use>
+        </svg>
+        <div>
+          <p>Email</p>
+          <a href="mailto:info@handmadejewelry.com">info@handmadejewelry.com</a>
+        </div>
+      </li>
+      <li>
+        <svg class="" width="32" height="32">
+          <use href="../img/symbol-defs.svg#icon-phone"></use>
+        </svg>
+        <div>
+          <p>Phone</p>
+          <a href="tel:+15550000000">+1 (555) 000-0000</a>
+        </div>
+      </li>
+      <li>
+        <svg class="" width="32" height="32">
+          <use href="../img/symbol-defs.svg#icon-map"></use>
+        </svg>
+        <div>
+          <p>Office</p>
+          <a
+            href="https://maps.google.com/?q=76-8 Oakington Manor Dr, London, UK"
+            target="_blank"
+            rel="noopener noreferrer"
+            >76-8 Oakington Manor Dr, London, UK</a
+          >
+        </div>
+      </li>
+    </ul>
+
+    <form>
+      <label for="username">Name</label>
+      <input
+        type="text"
+        name="username"
+        id="username"
+        placeholder="Tony"
+        pattern="^[a-zA-Z\s\.]{5,28}$"
+        required
+      />
+
+      <label for="phone">Phone</label>
+      <input
+        type="tel"
+        name="phone"
+        id="phone"
+        placeholder="+1 234 123 23"
+        pattern="^\+[0-9\s]{14}$"
+        required
+      />
+
+      <label for="messege">Describe what you want</label>
+      <textarea
+        name="message"
+        id="messege"
+        placeholder="Type your message..."
+        maxlength="500"
+        required
+      ></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</section>
