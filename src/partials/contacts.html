@@ -1,48 +1,50 @@
 <section id="contacts" class="contacts">
   <div class="container contacts-container">
     <div class="contacts-header">
-      <p class="contacts-subtitle">Connect</p>
+      <h3 class="contacts-subtitle">Connect</h3>
       <h2 class="contacts-title title-glob">Order your unique jewelry</h2>
       <p class="contacts-text">We'd love to hear more details from you!</p>
     </div>
 
-    <ul class="contacts-list">
-      <li class="contacts-item">
-        <svg class="contacts-icon" width="32" height="32">
-          <use href="../img/symbol-defs.svg#icon-envelope"></use>
-        </svg>
-        <div class="contacts-info">
-          <p class="contacts-info-label">Email</p>
-          <a class="contacts-link" href="mailto:info@handmadejewelry.com"
-            >info@handmadejewelry.com</a
-          >
-        </div>
-      </li>
-      <li class="contacts-item">
-        <svg class="contacts-icon" width="32" height="32">
-          <use href="../img/symbol-defs.svg#icon-phone"></use>
-        </svg>
-        <div class="contacts-info">
-          <p class="contacts-info-label">Phone</p>
-          <a class="contacts-link" href="tel:+1555000000">+1 (555) 000-000</a>
-        </div>
-      </li>
-      <li class="contacts-item">
-        <svg class="contacts-icon" width="32" height="32">
-          <use href="../img/symbol-defs.svg#icon-map"></use>
-        </svg>
-        <div class="contacts-info">
-          <p class="contacts-info-label">Office</p>
-          <a
-            class="contacts-link"
-            href="https://maps.google.com/?q=76-8+Oakington+Manor+Dr,+London,+UK"
-            target="_blank"
-            rel="noopener noreferrer"
-            >76-8 Oakington Manor Dr, London, UK</a
-          >
-        </div>
-      </li>
-    </ul>
+    <address class="contacts-address">
+      <ul class="contacts-list">
+        <li class="contacts-item">
+          <svg class="contacts-icon" width="32" height="32">
+            <use href="../img/symbol-defs.svg#icon-envelope"></use>
+          </svg>
+          <div class="contacts-info">
+            <p class="contacts-info-label">Email</p>
+            <a class="contacts-link" href="mailto:info@handmadejewelry.com"
+              >info@handmadejewelry.com</a
+            >
+          </div>
+        </li>
+        <li class="contacts-item">
+          <svg class="contacts-icon" width="32" height="32">
+            <use href="../img/symbol-defs.svg#icon-phone"></use>
+          </svg>
+          <div class="contacts-info">
+            <p class="contacts-info-label">Phone</p>
+            <a class="contacts-link" href="tel:+1555000000">+1 (555) 000-000</a>
+          </div>
+        </li>
+        <li class="contacts-item">
+          <svg class="contacts-icon" width="32" height="32">
+            <use href="../img/symbol-defs.svg#icon-map"></use>
+          </svg>
+          <div class="contacts-info">
+            <p class="contacts-info-label">Office</p>
+            <a
+              class="contacts-link"
+              href="https://maps.google.com/?q=76-8+Oakington+Manor+Dr,+London,+UK"
+              target="_blank"
+              rel="noopener noreferrer"
+              >76-8 Oakington Manor Dr, London, UK</a
+            >
+          </div>
+        </li>
+      </ul>
+    </address>
 
     <!-- CONTACTS FORM -->
     <form class="contacts-form">
@@ -54,7 +56,7 @@
           name="username"
           id="username"
           placeholder="Tony"
-          pattern="^[a-zA-Za-яА-ЯіІїЇєЄ\s\-\.]{2,40}$"
+          pattern="^[a-zA-Zа-яА-ЯіІїЇєЄ\s\-\.]{2,40}$"
           required
         />
       </div>

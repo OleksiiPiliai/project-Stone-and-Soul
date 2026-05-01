@@ -1,17 +1,17 @@
 /* CONTACTS HEADER */
+.contacts-container {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
 .contacts-header {
   display: flex;
   flex-direction: column;
-  padding-top: 64px;
-  padding-bottom: 48px;
+  margin-bottom: 48px;
 }
 
 .contacts-subtitle {
-  font-family: Mulish;
-  font-size: 16px;
-  font-style: normal;
   font-weight: 600;
-  line-height: 150%;
   margin-bottom: 16px;
 }
 .contacts-title {
@@ -19,13 +19,14 @@
 }
 
 .contacts-text {
-  font-family: Mulish;
   font-size: 18px;
-  line-height: 150%;
-  margin: 0;
 }
 
 /* CONTACTS LIST */
+
+.contacts-address {
+  font-style: normal;
+}
 
 .contacts-list {
   display: flex;
@@ -41,20 +42,12 @@
 }
 
 .contacts-info-label {
-  color: #000;
   font-family: Sora;
   font-size: 20px;
-  font-style: normal;
   line-height: 140%;
   letter-spacing: -0.2px;
 }
 .contacts-link {
-  color: #000;
-  font-family: Mulish;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 150%; /* 24px */
   text-decoration-line: underline;
   text-decoration-style: solid;
   text-decoration-skip-ink: none;
@@ -81,10 +74,6 @@
 }
 
 .contacts-form-label {
-  font-family: Mulish, sans-serif;
-  font-size: 16px;
-  line-height: 150%;
-  color: #000;
   margin-bottom: 8px;
 }
 
@@ -97,17 +86,13 @@
   width: 100%;
   border: 1px solid #d9d9d9;
   background-color: transparent;
-  font-family: Mulish, sans-serif;
-  font-size: 16px;
-  line-height: 150%;
-  color: #000;
   outline: transparent;
   transition: border-color 250ms ease;
 }
 
 .contacts-input {
   height: 48px;
-  padding: 12px;
+  padding: 8px 12px;
 }
 
 .contacts-textarea {
