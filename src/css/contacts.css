@@ -114,3 +114,60 @@
 .contacts-btn {
   margin-top: 0;
 }
+
+/* TABLET */
+@media only screen and (min-width: 768px) {
+  .contacts-container {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+  .contacts-list {
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  .contacts-item {
+    width: calc((100% - 48px) / 3);
+    flex: 0 0 auto;
+  }
+
+  .contacts-item svg {
+    margin-bottom: 16px;
+  }
+
+  .contacts-btn {
+    width: 217px;
+  }
+}
+
+/* DESKTOP */
+@media only screen and (min-width: 1440px) {
+  .contacts-container {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+  .contacts-wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 32px;
+  }
+  .contacts-form,
+  .contacts-address {
+    width: calc((100% - 32px) / 2);
+  }
+
+  .contacts-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 32px;
+    margin-bottom: 0;
+  }
+  .contacts-item {
+    width: auto;
+  }
+
+  .contacts-btn {
+    width: 192px;
+  }
+}
