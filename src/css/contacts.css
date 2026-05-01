@@ -128,7 +128,6 @@
 
   .contacts-item {
     width: calc((100% - 48px) / 3);
-    flex: 0 0 auto;
   }
 
   .contacts-item svg {
