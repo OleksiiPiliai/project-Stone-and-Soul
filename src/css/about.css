@@ -1,0 +1,36 @@
+.about-wrapper {
+  padding-top: 56px;
+  padding-bottom: 56px;
+}
+
+.about-img {
+  margin-bottom: 24px;
+}
+
+.about-title {
+  margin-bottom: 24px;
+}
+
+.about-text {
+  font-size: 18px;
+  margin-bottom: 24px;
+}
+
+.about-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.about-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.about-icon {
+  fill: #000;
+  flex-shrink: 0;
+}
