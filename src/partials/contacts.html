@@ -44,22 +44,23 @@
       </li>
     </ul>
 
+    <!-- CONTACTS FORM -->
     <form class="contacts-form">
       <div class="contacts-field">
-        <label class="contacts-form-label" for="username">Name</label>
+        <label class="contacts-form-label required" for="username">Name</label>
         <input
           class="contacts-input"
           type="text"
           name="username"
           id="username"
           placeholder="Tony"
-          pattern="^[a-zA-Zа-яА-ЯіІїЇєЄ\s\-\.]{2,40}$"
+          pattern="^[a-zA-Za-яА-ЯіІїЇєЄ\s\-\.]{2,40}$"
           required
         />
       </div>
 
       <div class="contacts-field">
-        <label class="contacts-form-label" for="phone">Phone</label>
+        <label class="contacts-form-label required" for="phone">Phone</label>
         <input
           class="contacts-input"
           type="tel"
