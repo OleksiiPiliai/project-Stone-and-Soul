@@ -52,16 +52,12 @@
 }
 
 .testimonials-review-text {
-  font-weight: 400;
   font-size: 18px;
-  line-height: 1.5;
   margin-bottom: 24px;
 }
 
 .testimonials-review-author {
   font-weight: 600;
-  font-size: 16px;
-  line-height: 1.5;
 }
 
 @media only screen and (min-width: 768px) {
