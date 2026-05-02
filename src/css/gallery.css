@@ -1,0 +1,117 @@
+/* --- Секція Gallery --- */
+.gallery {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+.gallery-title {
+  font-family: 'Sora', sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: #000;
+  margin-bottom: 24px;
+}
+.gallery-title,
+.gallery-description {
+  text-align: center;
+}
+
+.gallery-description {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #000;
+  margin-bottom: 40px;
+}
+
+/* --- (Mobile first) --- */
+.gallery-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.gallery-item {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.gallery-thumb {
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.gallery-thumb img {
+  width: 100%;
+  transition: transform 250ms ease;
+}
+
+.gallery-thumb:hover img {
+  transform: scale(1.15);
+}
+
+/* --- TABLET (768px+) --- */
+@media screen and (min-width: 768px) {
+  .gallery-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    align-items: start;
+  }
+
+  .gallery-item:nth-child(1) .gallery-thumb:nth-child(1) {
+    height: 368px;
+  }
+  .gallery-item:nth-child(1) .gallery-thumb:nth-child(2) {
+    height: 226px;
+  }
+  .gallery-item:nth-child(2) .gallery-thumb:nth-child(1) {
+    height: 216px;
+  }
+  .gallery-item:nth-child(2) .gallery-thumb:nth-child(2) {
+    height: 386px;
+  }
+
+  .gallery-thumb img {
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+/* --- DESKTOP (1440px+) --- */
+@media screen and (min-width: 1440px) {
+  .gallery-title {
+    font-size: 48px;
+  }
+
+  .gallery-title,
+  .gallery-description {
+    max-width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .gallery-list {
+    gap: 32px;
+  }
+
+  .gallery-item {
+    gap: 32px;
+  }
+
+  .gallery-item:nth-child(1) .gallery-thumb:nth-child(1) {
+    height: 640px;
+  }
+  .gallery-item:nth-child(1) .gallery-thumb:nth-child(2) {
+    height: 426px;
+  }
+  .gallery-item:nth-child(2) .gallery-thumb:nth-child(1) {
+    height: 426px;
+  }
+  .gallery-item:nth-child(2) .gallery-thumb:nth-child(2) {
+    height: 640px;
+  }
+}
