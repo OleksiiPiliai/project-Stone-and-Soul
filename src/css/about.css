@@ -4,7 +4,7 @@
 }
 
 .about-img {
-  margin-bottom: 24px;
+  margin-bottom: 32px;
 }
 
 .about-title {
@@ -30,7 +30,52 @@
   font-size: 18px;
 }
 
-.about-icon {
-  fill: #000;
-  flex-shrink: 0;
+.about-item::before {
+  content: '';
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.about-item-leaf::before {
+  background-image: url('../img/symbol-defs.svg#icon-leaf');
+}
+.about-item-heart::before {
+  background-image: url('../img/symbol-defs.svg#icon-donate-heart');
+}
+.about-item-book::before {
+  background-image: url('../img/symbol-defs.svg#icon-book');
+}
+
+@media screen and (min-width: 768px) {
+  .about-wrapper {
+    padding-top: 112px;
+    padding-bottom: 112px;
+  }
+
+  .about-img {
+    margin-bottom: 32px;
+    width: 704px;
+    height: 456px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .about-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+  .about-img {
+    margin-bottom: 0;
+    width: 640px;
+  }
+
+  .about-info {
+    max-width: 640px;
+  }
 }
