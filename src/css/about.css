@@ -41,13 +41,13 @@
 }
 
 .about-item-leaf::before {
-  background-image: url('../img/symbol-defs.svg#icon-leaf');
+  background-image: url('../img/about/leaf.svg');
 }
 .about-item-heart::before {
-  background-image: url('../img/symbol-defs.svg#icon-donate-heart');
+  background-image: url('../img/about/donate-heart.svg');
 }
 .about-item-book::before {
-  background-image: url('../img/symbol-defs.svg#icon-book');
+  background-image: url('../img/about/book.svg');
 }
 
 @media screen and (min-width: 768px) {
@@ -68,7 +68,7 @@
     display: flex;
     align-items: center;
     gap: 32px;
-}
+  }
 
   .about-img {
     margin-bottom: 0;
