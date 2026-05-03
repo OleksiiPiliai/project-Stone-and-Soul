@@ -2,7 +2,6 @@
   padding-top: 160px;
   padding-bottom: 152px;
   background-image:
-    linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
     image-set(
       url('../img/hero/Header-mob.jpg') 1x,
       url('../img/hero/Header-mob2x.jpg') 2x
@@ -14,52 +13,22 @@
 
 .hero-title {
   margin-bottom: 24px;
-  font-family: 'Sora', sans-serif;
-  font-weight: 400;
   font-size: 40px;
-  line-height: 1.2;
-  letter-spacing: -0.01em;
   color: #fff;
 }
 
 .hero-text {
   font-size: 18px;
-  line-height: 1.5;
   color: #fff;
 }
 
-.hero-title,
-.hero-text {
-  max-width: 335px;
-}
-
-.hero-container .btn {
+.hero-btn {
   display: flex;
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
   max-width: 335px;
   margin-top: 32px;
-  padding: 6px 12px;
-  transition:
-    background-color 200ms ease,
-    border-color 200ms ease,
-    color 200ms ease,
-    box-shadow 200ms ease;
-}
-
-.hero-container .btn:hover,
-.hero-container .btn:focus {
-  border-color: #ccc16e;
-  background-color: #fff;
-  color: #0c0c0c;
-}
-
-.hero-container .btn:active {
-  border-color: #ccc16e;
-  background-color: #ccc16e;
-  box-shadow: inset 0 0 8px 0 rgba(0, 0, 0, 0.32);
-  color: #0c0c0c;
 }
 
 /* tablet */
@@ -68,7 +37,6 @@
   .hero-container {
     padding-bottom: 435px;
     background-image:
-      linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
       image-set(
         url('../img/hero/Header-tab.jpg') 1x,
         url('../img/hero/Header-tab2x.jpg') 2x
@@ -87,7 +55,6 @@
   .hero-container {
     padding: 224px 64px 360px;
     background-image:
-      linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
       image-set(
         url('../img/hero/Header-desc.jpg') 1x,
         url('../img/hero/Header-desc2x.jpg') 2x
