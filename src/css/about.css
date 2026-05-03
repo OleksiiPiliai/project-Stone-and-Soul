@@ -41,13 +41,13 @@
 }
 
 .about-item-leaf::before {
-  background-image: url('../img/about/leaf.svg');
+  background-image: url('/img/about/leaf.svg');
 }
 .about-item-heart::before {
-  background-image: url('../img/about/donate-heart.svg');
+  background-image: url('/img/about/donate-heart.svg');
 }
 .about-item-book::before {
-  background-image: url('../img/about/book.svg');
+  background-image: url('/img/about/book.svg');
 }
 
 @media screen and (min-width: 768px) {
