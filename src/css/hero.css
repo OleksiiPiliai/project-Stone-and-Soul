@@ -1,7 +1,4 @@
-.about-section {
-  width: 100%;
-  max-width: 375px;
-  margin: 0 auto;
+.hero-container {
   padding-top: 160px;
   padding-bottom: 152px;
   background-image:
@@ -15,17 +12,8 @@
   background-size: cover;
 }
 
-.about-section .container {
-  box-sizing: border-box;
-  width: 100%;
-  max-width: none;
-  padding: 0 20px;
-}
-
-.header-about {
-  width: 100%;
-  max-width: 335px;
-  margin: 0 0 24px;
+.hero-title {
+  margin-bottom: 24px;
   font-family: 'Sora', sans-serif;
   font-weight: 400;
   font-size: 40px;
@@ -34,35 +22,25 @@
   color: #fff;
 }
 
-.about-text {
-  width: 100%;
-  max-width: 335px;
-  margin: 0;
-  font-family: 'Mulish', sans-serif;
-  font-weight: 400;
+.hero-text {
   font-size: 18px;
   line-height: 1.5;
   color: #fff;
 }
 
-.btn {
+.hero-title,
+.hero-text {
+  max-width: 335px;
+}
+
+.hero-container .btn {
   display: flex;
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
-  width: 100%;
   max-width: 335px;
-  height: 36px;
   margin-top: 32px;
   padding: 6px 12px;
-  border: 1px solid var(--color-laser, #ccc16e);
-  font-family: 'Mulish', sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  color: var(--color-neutral-darkest, #0c0c0c);
-  text-decoration: none;
-  background-color: #ccc16e;
   transition:
     background-color 200ms ease,
     border-color 200ms ease,
@@ -70,14 +48,14 @@
     box-shadow 200ms ease;
 }
 
-.btn:hover,
-.btn:focus {
+.hero-container .btn:hover,
+.hero-container .btn:focus {
   border-color: #ccc16e;
   background-color: #fff;
   color: #0c0c0c;
 }
 
-.btn:active {
+.hero-container .btn:active {
   border-color: #ccc16e;
   background-color: #ccc16e;
   box-shadow: inset 0 0 8px 0 rgba(0, 0, 0, 0.32);
@@ -87,9 +65,7 @@
 /* tablet */
 
 @media only screen and (min-width: 768px) {
-  .about-section {
-    max-width: 768px;
-    padding-top: 160px;
+  .hero-container {
     padding-bottom: 435px;
     background-image:
       linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
@@ -99,31 +75,16 @@
       );
   }
 
-  .about-section .container {
-    padding: 0 32px;
-  }
-
-  .header-about {
+  .hero-title,
+  .hero-text {
     max-width: 513px;
-    font-size: 40px;
-  }
-
-  .about-text {
-    max-width: 513px;
-    font-size: 18px;
-  }
-
-  .btn {
-    max-width: 217px;
-    width: 217px;
   }
 }
 
 /* desktop */
 
 @media only screen and (min-width: 1440px) {
-  .about-section {
-    max-width: 1440px;
+  .hero-container {
     padding: 224px 64px 360px;
     background-image:
       linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
@@ -133,22 +94,12 @@
       );
   }
 
-  .about-section .container {
-    padding: 0 64px;
+  .hero-title,
+  .hero-text {
+    max-width: 640px;
   }
 
-  .header-about {
-    max-width: 640px;
+  .hero-title {
     font-size: 56px;
-  }
-
-  .about-text {
-    max-width: 640px;
-    font-size: 18px;
-  }
-
-  .btn {
-    max-width: 192px;
-    width: 192px;
   }
 }
