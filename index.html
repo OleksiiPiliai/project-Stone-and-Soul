@@ -22,7 +22,7 @@
 
     <title>Stone-and-Soul</title>
     <script type="module" crossorigin src="/project-Stone-and-Soul/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/project-Stone-and-Soul/assets/index-DsMJQftW.css">
+    <link rel="stylesheet" crossorigin href="/project-Stone-and-Soul/assets/index-CrW2odfO.css">
   </head>
   <body>
     <header class="header">
@@ -64,7 +64,7 @@
     <!-- Кнопка бургер-меню -->
     <button class="burger-btn" type="button" aria-label="Open mobile menu">
       <svg class="burger-icon" width="24" height="24">
-        <use href="/project-Stone-and-Soul/assets/symbol-defs-7RWQwSY-.svg#icon-menu"></use>
+        <use href="/project-Stone-and-Soul/assets/symbol-defs-Dh6WZOKE.svg#icon-menu"></use>
       </svg>
     </button>
   </div>
@@ -72,7 +72,7 @@
 
 
     <main>
-      <!-- Loads the specified .html file -->
+      <!-- Loads the specified .html file  -->
       Hero
       <section id="about" class="about">
   <div class="container about-wrapper">
@@ -306,7 +306,99 @@
   </div>
 </section>
 
-      Contacts
+      <section id="contacts" class="contacts">
+  <div class="container contacts-container">
+    <div class="contacts-header">
+      <h3 class="contacts-subtitle">Connect</h3>
+      <h2 class="contacts-title title-glob">Order your unique jewelry</h2>
+      <p class="contacts-text">We'd love to hear more details from you!</p>
+    </div>
+
+    <div class="contacts-wrapper">
+      <address class="contacts-address">
+        <ul class="contacts-list">
+          <li class="contacts-item">
+            <svg class="contacts-icon" width="32" height="32">
+              <use href="../img/symbol-defs.svg#icon-envelope"></use>
+            </svg>
+            <p class="contacts-info-label">Email</p>
+            <a class="contacts-link" href="mailto:info@handmadejewelry.com"
+              >info@handmadejewelry.com</a
+            >
+          </li>
+          <li class="contacts-item">
+            <svg class="contacts-icon" width="32" height="32">
+              <use href="../img/symbol-defs.svg#icon-phone"></use>
+            </svg>
+            <p class="contacts-info-label">Phone</p>
+            <a class="contacts-link" href="tel:+1555000000">+1 (555) 000-000</a>
+          </li>
+          <li class="contacts-item">
+            <svg class="contacts-icon" width="32" height="32">
+              <use href="../img/symbol-defs.svg#icon-map"></use>
+            </svg>
+            <p class="contacts-info-label">Office</p>
+            <a
+              class="contacts-link"
+              href="https://maps.google.com/?q=76-8+Oakington+Manor+Dr,+London,+UK"
+              target="_blank"
+              rel="noopener noreferrer"
+              >76-8 Oakington Manor Dr, London, UK</a
+            >
+          </li>
+        </ul>
+      </address>
+
+      <!-- CONTACTS FORM -->
+      <form class="contacts-form">
+        <div class="contacts-field">
+          <label class="contacts-form-label required" for="username"
+            >Name</label
+          >
+          <input
+            class="contacts-input"
+            type="text"
+            name="username"
+            id="username"
+            placeholder="Tony"
+            pattern="^[a-zA-Zа\s\-\.]{2,40}$"
+            required
+          />
+        </div>
+
+        <div class="contacts-field">
+          <label class="contacts-form-label required" for="phone">Phone</label>
+          <input
+            class="contacts-input"
+            type="tel"
+            name="phone"
+            id="phone"
+            placeholder="+1 234 123 23"
+            pattern="^\+[0-9\s]{14}$"
+            required
+          />
+        </div>
+
+        <div class="contacts-field">
+          <label class="contacts-form-label" for="message"
+            >Describe what you want</label
+          >
+          <textarea
+            class="contacts-textarea"
+            name="message"
+            id="message"
+            placeholder="Type your message..."
+            maxlength="500"
+            required
+          ></textarea>
+        </div>
+
+        <button type="submit" class="btn contacts-btn">Submit</button>
+      </form>
+    </div>
+  </div>
+</section>
+
     </main>
 
     <footer class="footer">
@@ -456,7 +548,7 @@
     <a href="#order" class="menu-btn btn">Order Now</a>
   </div>
 </div>
-
+ 
 
   </body>
 </html>
