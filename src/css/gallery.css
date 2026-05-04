@@ -1,0 +1,72 @@
+/* --- Секція Gallery --- */
+.box-gallery-container {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+.gallery-description {
+  font-size: 18px;
+}
+
+.gallery-list {
+  display: flex;
+}
+
+.gallery-title {
+  margin-bottom: 24px;
+}
+.gallery-title,
+.gallery-description {
+  text-align: center;
+}
+
+/* --- (Mobile first) --- */
+.gallery-list {
+  flex-direction: column;
+  gap: 16px;
+}
+
+.gallery-description {
+  margin-bottom: 40px;
+}
+
+.gallery-item img {
+  width: 100%;
+}
+
+/* --- TABLET (768px+) --- */
+@media screen and (min-width: 768px) {
+  .gallery-description {
+    margin-bottom: 80px;
+  }
+
+  .gallery-list {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 626px;
+    gap: 24px;
+  }
+}
+
+/* --- DESKTOP (1440px+) --- */
+@media screen and (min-width: 1440px) {
+  .gallery-title {
+    font-size: 48px;
+  }
+
+  .gallery-title,
+  .gallery-description {
+    max-width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .gallery-list {
+    height: 1098px;
+    gap: 32px;
+  }
+
+  .gallery-item {
+    width: 640px;
+  }
+}
