@@ -22,7 +22,7 @@
 
     <title>Stone-and-Soul</title>
     <script type="module" crossorigin src="/project-Stone-and-Soul/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/project-Stone-and-Soul/assets/index-CwXMBX7p.css">
+    <link rel="stylesheet" crossorigin href="/project-Stone-and-Soul/assets/index-CjyIZW6V.css">
   </head>
   <body>
     <header class="header">
@@ -72,7 +72,7 @@
 
 
     <main>
-      <!-- Loads the specified .html file  -->
+      <!-- Loads the specified .html file -->
       <section>
   <div class="container hero-container">
     <h1 class="title-glob hero-title">Discover the Art of Handmade Jewelry</h1>
@@ -192,7 +192,6 @@
             alt="Amethyst jewelry"
             width="335"
             height="335"
-            loading="lazy"
           />
         </picture>
       </li>
@@ -403,7 +402,7 @@
       <section id="contacts" class="contacts">
   <div class="container contacts-container">
     <div class="contacts-header">
-      <h3 class="contacts-subtitle">Connect</h3>
+      <p class="contacts-subtitle">Connect</p>
       <h2 class="contacts-title title-glob">Order your unique jewelry</h2>
       <p class="contacts-text">We'd love to hear more details from you!</p>
     </div>
@@ -458,6 +457,7 @@
             pattern="^[a-zA-Zа\s\-\.]{2,40}$"
             required
           />
+          <p class="contacts-error">Error Text</p>
         </div>
 
         <div class="contacts-field">
@@ -467,10 +467,11 @@
             type="tel"
             name="phone"
             id="phone"
-            placeholder="+1 234 123 23"
+            placeholder="+1 234 567 8900"
             pattern="^\+[0-9\s]{14}$"
             required
           />
+          <p class="contacts-error">Error Text</p>
         </div>
 
         <div class="contacts-field">
@@ -485,6 +486,7 @@
             maxlength="500"
             required
           ></textarea>
+          <p class="contacts-error">Error Text</p>
         </div>
 
         <button type="submit" class="btn contacts-btn">Submit</button>
@@ -642,7 +644,7 @@
     <a href="#contacts" class="menu-btn btn">Order Now</a>
   </div>
 </div>
- 
+
 
   </body>
 </html>
