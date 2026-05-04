@@ -3,8 +3,8 @@
   padding-bottom: 152px;
   background-image:
     image-set(
-      url('../img/hero/Header-mob.jpg') 1x,
-      url('../img/hero/Header-mob2x.jpg') 2x
+      url('/img/hero/header-mob.jpg') 1x,
+      url('/img/hero/header-mob2x.jpg') 2x
     );
   background-position: center;
   background-repeat: no-repeat;
@@ -38,8 +38,8 @@
     padding-bottom: 435px;
     background-image:
       image-set(
-        url('../img/hero/Header-tab.jpg') 1x,
-        url('../img/hero/Header-tab2x.jpg') 2x
+        url('/img/hero/header-tab.jpg') 1x,
+        url('/img/hero/header-tab2x.jpg') 2x
       );
   }
 
@@ -56,8 +56,8 @@
     padding: 224px 64px 360px;
     background-image:
       image-set(
-        url('../img/hero/Header-desc.jpg') 1x,
-        url('../img/hero/Header-desc2x.jpg') 2x
+        url('/img/hero/header-desc.jpg') 1x,
+        url('/img/hero/header-desc2x.jpg') 2x
       );
   }
 
