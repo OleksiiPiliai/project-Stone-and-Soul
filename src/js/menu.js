@@ -4,7 +4,7 @@
     openMenuBtn: document.querySelector('.burger-btn'), // Кнопка открытия
     closeMenuBtn: document.querySelector('.menu-close-button'), // Кнопка закрытия
     menu: document.querySelector('.mob-menu'), // Само меню
-    menuLinks: document.querySelectorAll('.menu-nav-link'), // Ссылки в меню
+    menuLinks: document.querySelectorAll('.menu-nav-link, .menu-btn'), // Ссылки в меню
     logo: document.querySelector('.menu-logo'), // Логотип в хедере
   };
 
