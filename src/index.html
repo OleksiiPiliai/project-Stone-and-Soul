@@ -11,7 +11,6 @@
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@200..1000&family=Sora&display=swap"
       rel="stylesheet"
     />
-
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
@@ -19,7 +18,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Stone-and-Soul</title>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
@@ -40,6 +39,18 @@
 
     <load src="./partials/mobmenu.html" />
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 700,
+        easing: 'ease-out-cubic',
+        once: false,
+        offset: 90,
+        mirror: true,
+        disable: () =>
+          window.matchMedia('(prefers-reduced-motion: reduce)').matches,
+      });
+    </script>
     <script type="module" src="./main.js"></script>
   </body>
 </html>
