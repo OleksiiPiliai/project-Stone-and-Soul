@@ -11,7 +11,6 @@
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@200..1000&family=Sora&display=swap"
       rel="stylesheet"
     />
-
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
@@ -19,10 +18,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Stone-and-Soul</title>
     <script type="module" crossorigin src="/project-Stone-and-Soul/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/project-Stone-and-Soul/assets/index-CjyIZW6V.css">
+    <link rel="stylesheet" crossorigin href="/project-Stone-and-Soul/assets/index-Csm7kh56.css">
   </head>
   <body>
     <header class="header">
@@ -74,19 +73,27 @@
     <main>
       <!-- Loads the specified .html file -->
       <section>
-  <div class="container hero-container">
-    <h1 class="title-glob hero-title">Discover the Art of Handmade Jewelry</h1>
-    <p class="hero-text">
+  <div class="container hero-container" data-aos="zoom-in">
+    <h1 class="title-glob hero-title" data-aos="fade-up">
+      Discover the Art of Handmade Jewelry
+    </h1>
+    <p class="hero-text" data-aos="fade-up" data-aos-delay="100">
       Each piece of our jewelry tells a story, crafted with love and care.
       Embrace the beauty of uniqueness and sustainability in every design.
     </p>
-    <a class="btn hero-btn" href="#contacts">Order Now</a>
+    <a
+      class="btn hero-btn"
+      href="#contacts"
+      data-aos="fade-up"
+      data-aos-delay="200"
+      >Order Now</a
+    >
   </div>
 </section>
 
       <section id="about" class="about">
   <div class="container about-wrapper">
-    <picture>
+    <picture data-aos="zoom-in-right">
       <source
         media="(min-width: 1440px)"
         srcset="/project-Stone-and-Soul/assets/desca-heqBv5z5.jpg 1x, /project-Stone-and-Soul/assets/desca2x-Btnzxw8_.jpg 2x"
@@ -103,16 +110,15 @@
         alt="Jewelry making process"
         width="335"
         height="335"
-        loading="lazy"
       />
     </picture>
 
     <div class="about-info">
-      <h2 class="about-title title-glob">
+      <h2 class="about-title title-glob" data-aos="fade-up">
         The Artistry Behind Handmade Jewelry
       </h2>
 
-      <p class="about-text">
+      <p class="about-text" data-aos="fade-up" data-aos-delay="200">
         Handmade Jewelry began as a passion project, inspired by the beauty of
         nature and the desire to create meaningful pieces. Each item is crafted
         with love, reflecting our commitment to sustainability and the unique
@@ -120,15 +126,27 @@
       </p>
 
       <ul class="about-list">
-        <li class="about-item about-item-leaf">
+        <li
+          class="about-item about-item-leaf"
+          data-aos="flip-up"
+          data-aos-delay="500"
+        >
           <p>Inspired by Nature</p>
         </li>
 
-        <li class="about-item about-item-heart">
+        <li
+          class="about-item about-item-heart"
+          data-aos="flip-up"
+          data-aos-delay="600"
+        >
           <p>Handcrafted with Love</p>
         </li>
 
-        <li class="about-item about-item-book">
+        <li
+          class="about-item about-item-book"
+          data-aos="flip-up"
+          data-aos-delay="700"
+        >
           <p>Every Piece Tells a Story</p>
         </li>
       </ul>
@@ -138,11 +156,16 @@
 
       <section id="benefits" class="benefits-section">
   <div class="container benefits-container">
-    <h2 class="benefits-title title-glob">
+    <h2 class="benefits-title title-glob" data-aos="fade-up">
       Discover the Artistry of Unique, Handmade Jewelry Crafted Just for You
     </h2>
     <ul class="benefits-list">
-      <li class="benefits-item">
+      <li
+        class="benefits-item"
+        data-aos="flip-left"
+        data-aos-delay="50"
+        data-aos-duration="600"
+      >
         <h3 class="benefits-item-title">Unique Design</h3>
         <p class="benefits-item-text">
           Each piece of jewelry is a unique work of art, handcrafted with love
@@ -150,14 +173,24 @@
           production.
         </p>
       </li>
-      <li class="benefits-item">
+      <li
+        class="benefits-item"
+        data-aos="flip-left"
+        data-aos-delay="200"
+        data-aos-duration="600"
+      >
         <h3 class="benefits-item-title">Quality and Reliability</h3>
         <p class="benefits-item-text">
           We use only high-quality materials and proven techniques so that your
           jewelry lasts long and retains its original look.
         </p>
       </li>
-      <li class="benefits-item">
+      <li
+        class="benefits-item"
+        data-aos="flip-left"
+        data-aos-delay="450"
+        data-aos-duration="600"
+      >
         <h3 class="benefits-item-title">A Story in Every Detail</h3>
         <p class="benefits-item-text">
           Our jewelry isn't just an accessory; it's a story that comes to life
@@ -171,13 +204,15 @@
 
       <section class="gallery" id="gallery">
   <div class="container box-gallery-container">
-    <h2 class="gallery-title title-glob">Jewelry Showcase</h2>
-    <p class="gallery-description">
+    <h2 class="gallery-title title-glob" data-aos="fade-up">
+      Jewelry Showcase
+    </h2>
+    <p class="gallery-description" data-aos="fade-up" data-aos-delay="100">
       Discover the beauty of our handcrafted jewelry in style.
     </p>
 
     <ul class="gallery-list">
-      <li class="gallery-item">
+      <li class="gallery-item" data-aos="fade-down-right" data-aos-delay="80">
         <picture>
           <source
             media="(min-width: 1440px)"
@@ -195,7 +230,7 @@
           />
         </picture>
       </li>
-      <li class="gallery-item">
+      <li class="gallery-item" data-aos="fade-up-right" data-aos-delay="160">
         <picture>
           <source
             media="(min-width: 1440px)"
@@ -213,7 +248,7 @@
           />
         </picture>
       </li>
-      <li class="gallery-item">
+      <li class="gallery-item" data-aos="fade-down-left" data-aos-delay="240">
         <picture>
           <source
             media="(min-width: 1440px)"
@@ -231,7 +266,7 @@
           />
         </picture>
       </li>
-      <li class="gallery-item">
+      <li class="gallery-item" data-aos="fade-up-left" data-aos-delay="320">
         <picture>
           <source
             media="(min-width: 1440px)"
@@ -255,14 +290,16 @@
 
       <section id="testimonials">
   <div class="container testimonials-container">
-    <h2 class="title-glob testimonials-title">Customer testimonials</h2>
-    <p class="testimonials-text">
+    <h2 class="title-glob testimonials-title" data-aos="fade-up">
+      Customer testimonials
+    </h2>
+    <p class="testimonials-text" data-aos="fade-up" data-aos-delay="100">
       Absolutely love my new earrings! They are stunning.
     </p>
 
     <ul class="testimonials-list">
       <li class="testimonials-item">
-        <picture>
+        <picture data-aos="fade-up">
           <source
             media="(min-width: 1440px)"
             srcset="/project-Stone-and-Soul/assets/serenity-fCgsncFZ.jpg 1x, /project-Stone-and-Soul/assets/serenity2x-DeuGPBvD.jpg 2x"
@@ -283,7 +320,7 @@
           />
         </picture>
 
-        <picture>
+        <picture data-aos="fade-up" data-aos-delay="100">
           <source
             media="(min-width: 1440px)"
             srcset="/project-Stone-and-Soul/assets/heritage-CdZzcJc2.jpg 1x, /project-Stone-and-Soul/assets/heritage2x-BXNOCf5b.jpg 2x"
@@ -304,7 +341,7 @@
           />
         </picture>
 
-        <div class="testimonials-item-content">
+        <div class="testimonials-item-content" data-aos="fade-up" data-aos-delay="200">
           <div class="testimonials-icon-wrapper">
             <svg width="24" height="24" class="testimonials-icon">
               <use href="/project-Stone-and-Soul/assets/symbol-defs-CJyC26xU.svg#icon-star-fiiled"></use>
@@ -329,7 +366,7 @@
         </div>
       </li>
       <li class="testimonials-item">
-        <div class="testimonials-item-content">
+        <div class="testimonials-item-content" data-aos="fade-up">
           <div class="testimonials-icon-wrapper">
             <svg width="24" height="24" class="testimonials-icon">
               <use href="/project-Stone-and-Soul/assets/symbol-defs-CJyC26xU.svg#icon-star-fiiled"></use>
@@ -353,7 +390,7 @@
           <p class="testimonials-review-author">Jane Edison</p>
         </div>
 
-        <picture>
+        <picture data-aos="fade-up" data-aos-delay="100">
           <source
             media="(min-width: 1440px)"
             srcset="/project-Stone-and-Soul/assets/cozy-BmK5BacR.jpg 1x, /project-Stone-and-Soul/assets/cozy2x-CbRsfPSw.jpg 2x"
@@ -374,7 +411,7 @@
           />
         </picture>
 
-        <picture>
+        <picture data-aos="fade-up" data-aos-delay="200">
           <source
             media="(min-width: 1440px)"
             srcset="/project-Stone-and-Soul/assets/timeless-DzI8BNbx.jpg 1x, /project-Stone-and-Soul/assets/timeless2x-Ih2HYzb5.jpg 2x"
@@ -402,15 +439,23 @@
       <section id="contacts" class="contacts">
   <div class="container contacts-container">
     <div class="contacts-header">
-      <p class="contacts-subtitle">Connect</p>
-      <h2 class="contacts-title title-glob">Order your unique jewelry</h2>
-      <p class="contacts-text">We'd love to hear more details from you!</p>
+      <p class="contacts-subtitle" data-aos="fade-up">Connect</p>
+      <h2
+        class="contacts-title title-glob"
+        data-aos="fade-up"
+        data-aos-delay="100"
+      >
+        Order your unique jewelry
+      </h2>
+      <p class="contacts-text" data-aos="fade-up" data-aos-delay="200">
+        We'd love to hear more details from you!
+      </p>
     </div>
 
     <div class="contacts-wrapper">
       <address class="contacts-address">
         <ul class="contacts-list">
-          <li class="contacts-item">
+          <li class="contacts-item" data-aos="fade-up" data-aos-delay="100">
             <svg class="contacts-icon" width="32" height="32">
               <use href="/project-Stone-and-Soul/assets/symbol-defs-CJyC26xU.svg#icon-envelope"></use>
             </svg>
@@ -419,14 +464,14 @@
               >info@handmadejewelry.com</a
             >
           </li>
-          <li class="contacts-item">
+          <li class="contacts-item" data-aos="fade-up" data-aos-delay="200">
             <svg class="contacts-icon" width="32" height="32">
               <use href="/project-Stone-and-Soul/assets/symbol-defs-CJyC26xU.svg#icon-phone"></use>
             </svg>
             <p class="contacts-info-label">Phone</p>
             <a class="contacts-link" href="tel:+1555000000">+1 (555) 000-000</a>
           </li>
-          <li class="contacts-item">
+          <li class="contacts-item" data-aos="fade-up" data-aos-delay="300">
             <svg class="contacts-icon" width="32" height="32">
               <use href="/project-Stone-and-Soul/assets/symbol-defs-CJyC26xU.svg#icon-map"></use>
             </svg>
@@ -444,7 +489,7 @@
 
       <!-- CONTACTS FORM -->
       <form class="contacts-form">
-        <div class="contacts-field">
+        <div class="contacts-field" data-aos="fade-right" data-aos-delay="120">
           <label class="contacts-form-label required" for="username"
             >Name</label
           >
@@ -460,7 +505,7 @@
           <p class="contacts-error">Please enter your name</p>
         </div>
 
-        <div class="contacts-field">
+        <div class="contacts-field" data-aos="fade-right" data-aos-delay="220">
           <label class="contacts-form-label required" for="phone">Phone</label>
           <input
             class="contacts-input"
@@ -474,7 +519,7 @@
           <p class="contacts-error">Please enter a valid phone number</p>
         </div>
 
-        <div class="contacts-field">
+        <div class="contacts-field" data-aos="fade-right" data-aos-delay="320">
           <label class="contacts-form-label" for="message"
             >Describe what you want</label
           >
@@ -489,7 +534,14 @@
           <p class="contacts-error">Message cannot be empty</p>
         </div>
 
-        <button type="submit" class="btn contacts-btn">Submit</button>
+        <button
+          type="submit"
+          class="btn contacts-btn"
+          data-aos="fade-right"
+          data-aos-delay="420"
+        >
+          Submit
+        </button>
       </form>
     </div>
   </div>
@@ -623,20 +675,20 @@
     </div>
 
     <nav class="menu-nav">
-      <ul class="menu-nav-list">
-        <li class="menu-nav-item">
+      <ul class="menu-nav-list" data-aos="fade-right" data-aos-delay="100">
+        <li class="menu-nav-item" data-aos="fade-right" data-aos-delay="120">
           <a href="#about" class="menu-nav-link">About us</a>
         </li>
-        <li class="menu-nav-item">
+        <li class="menu-nav-item" data-aos="fade-right" data-aos-delay="240">
           <a href="#benefits" class="menu-nav-link">Benefits</a>
         </li>
-        <li class="menu-nav-item">
+        <li class="menu-nav-item" data-aos="fade-right" data-aos-delay="360">
           <a href="#gallery" class="menu-nav-link">Gallery</a>
         </li>
-        <li class="menu-nav-item">
+        <li class="menu-nav-item" data-aos="fade-right" data-aos-delay="480">
           <a href="#testimonials" class="menu-nav-link">Testimonials</a>
         </li>
-        <li class="menu-nav-item">
+        <li class="menu-nav-item" data-aos="fade-right" data-aos-delay="600">
           <a href="#contacts" class="menu-nav-link">Contacts</a>
         </li>
       </ul>
@@ -646,5 +698,17 @@
 </div>
 
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 700,
+        easing: 'ease-out-cubic',
+        once: false,
+        offset: 90,
+        mirror: true,
+        disable: () =>
+          window.matchMedia('(prefers-reduced-motion: reduce)').matches,
+      });
+    </script>
   </body>
 </html>
