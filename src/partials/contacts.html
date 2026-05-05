@@ -1,15 +1,23 @@
 <section id="contacts" class="contacts">
   <div class="container contacts-container">
     <div class="contacts-header">
-      <p class="contacts-subtitle">Connect</p>
-      <h2 class="contacts-title title-glob">Order your unique jewelry</h2>
-      <p class="contacts-text">We'd love to hear more details from you!</p>
+      <p class="contacts-subtitle" data-aos="fade-up">Connect</p>
+      <h2
+        class="contacts-title title-glob"
+        data-aos="fade-up"
+        data-aos-delay="100"
+      >
+        Order your unique jewelry
+      </h2>
+      <p class="contacts-text" data-aos="fade-up" data-aos-delay="200">
+        We'd love to hear more details from you!
+      </p>
     </div>
 
     <div class="contacts-wrapper">
       <address class="contacts-address">
         <ul class="contacts-list">
-          <li class="contacts-item">
+          <li class="contacts-item" data-aos="fade-up" data-aos-delay="100">
             <svg class="contacts-icon" width="32" height="32">
               <use href="/img/symbol-defs.svg#icon-envelope"></use>
             </svg>
@@ -18,14 +26,14 @@
               >info@handmadejewelry.com</a
             >
           </li>
-          <li class="contacts-item">
+          <li class="contacts-item" data-aos="fade-up" data-aos-delay="200">
             <svg class="contacts-icon" width="32" height="32">
               <use href="/img/symbol-defs.svg#icon-phone"></use>
             </svg>
             <p class="contacts-info-label">Phone</p>
             <a class="contacts-link" href="tel:+1555000000">+1 (555) 000-000</a>
           </li>
-          <li class="contacts-item">
+          <li class="contacts-item" data-aos="fade-up" data-aos-delay="300">
             <svg class="contacts-icon" width="32" height="32">
               <use href="/img/symbol-defs.svg#icon-map"></use>
             </svg>
@@ -43,7 +51,7 @@
 
       <!-- CONTACTS FORM -->
       <form class="contacts-form">
-        <div class="contacts-field">
+        <div class="contacts-field" data-aos="fade-right" data-aos-delay="120">
           <label class="contacts-form-label required" for="username"
             >Name</label
           >
@@ -59,7 +67,7 @@
           <p class="contacts-error">Please enter your name</p>
         </div>
 
-        <div class="contacts-field">
+        <div class="contacts-field" data-aos="fade-right" data-aos-delay="220">
           <label class="contacts-form-label required" for="phone">Phone</label>
           <input
             class="contacts-input"
@@ -73,7 +81,7 @@
           <p class="contacts-error">Please enter a valid phone number</p>
         </div>
 
-        <div class="contacts-field">
+        <div class="contacts-field" data-aos="fade-right" data-aos-delay="320">
           <label class="contacts-form-label" for="message"
             >Describe what you want</label
           >
@@ -88,7 +96,14 @@
           <p class="contacts-error">Message cannot be empty</p>
         </div>
 
-        <button type="submit" class="btn contacts-btn">Submit</button>
+        <button
+          type="submit"
+          class="btn contacts-btn"
+          data-aos="fade-right"
+          data-aos-delay="420"
+        >
+          Submit
+        </button>
       </form>
     </div>
   </div>
