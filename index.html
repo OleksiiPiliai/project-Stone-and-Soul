@@ -93,7 +93,11 @@
 
       <section id="about" class="about">
   <div class="container about-wrapper">
-    <picture data-aos="zoom-in-right">
+    <picture
+      data-aos="fade-down"
+      data-aos-easing="linear"
+      data-aos-duration="800"
+    >
       <source
         media="(min-width: 1440px)"
         srcset="/project-Stone-and-Soul/assets/desca-heqBv5z5.jpg 1x, /project-Stone-and-Soul/assets/desca2x-Btnzxw8_.jpg 2x"
@@ -210,7 +214,7 @@
     </p>
 
     <ul class="gallery-list">
-      <li class="gallery-item">
+      <li class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
         <picture>
           <source
             media="(min-width: 1440px)"
@@ -232,7 +236,7 @@
           />
         </picture>
       </li>
-      <li class="gallery-item">
+      <li class="gallery-item" data-aos="zoom-in" data-aos-delay="250">
         <picture>
           <source
             media="(min-width: 1440px)"
@@ -254,7 +258,7 @@
           />
         </picture>
       </li>
-      <li class="gallery-item">
+      <li class="gallery-item" data-aos="zoom-in" data-aos-delay="150">
         <picture>
           <source
             media="(min-width: 1440px)"
@@ -276,7 +280,7 @@
           />
         </picture>
       </li>
-      <li class="gallery-item">
+      <li class="gallery-item" data-aos="zoom-in" data-aos-delay="200">
         <picture>
           <source
             media="(min-width: 1440px)"
@@ -717,9 +721,9 @@
       AOS.init({
         duration: 700,
         easing: 'ease-out-cubic',
-        once: false,
+        once: true,
         offset: 90,
-        mirror: true,
+        mirror: false,
         disable: () =>
           window.matchMedia('(prefers-reduced-motion: reduce)').matches,
       });
