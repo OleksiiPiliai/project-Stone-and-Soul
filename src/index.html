@@ -38,15 +38,16 @@
     <load src="./partials/footer.html" />
 
     <load src="./partials/mobmenu.html" />
+    <load src="./partials/modal.html" />
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init({
         duration: 700,
         easing: 'ease-out-cubic',
-        once: true,
+        once: false,
         offset: 90,
-        mirror: false,
+        mirror: true,
         disable: () =>
           window.matchMedia('(prefers-reduced-motion: reduce)').matches,
       });
