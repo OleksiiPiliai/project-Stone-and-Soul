@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Stone-and-Soul</title>
     <script type="module" crossorigin src="/project-Stone-and-Soul/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/project-Stone-and-Soul/assets/index-Csm7kh56.css">
+    <link rel="stylesheet" crossorigin href="/project-Stone-and-Soul/assets/index-ZKJQox7Q.css">
   </head>
   <body>
     <header class="header">
@@ -81,12 +81,13 @@
       Each piece of our jewelry tells a story, crafted with love and care.
       Embrace the beauty of uniqueness and sustainability in every design.
     </p>
-    <a
+    <button
       class="btn hero-btn"
-      href="#contacts"
+      type="button"
       data-aos="fade-up"
       data-aos-delay="200"
-      >Order Now</a
+      popovertarget="backdrop"
+      >Order Now</button
     >
   </div>
 </section>
@@ -715,15 +716,51 @@
   </div>
 </div>
 
+    <div class="backdrop" id="backdrop" popover>
+    <div class="modal-box ">
+        <button popovertarget="backdrop" popovertargetaction="hide" class="modal-btn-x">
+            <svg width="32" height="32">
+                <use href="../img/symbol-defs.svg#icon-exit"></use>
+            </svg>
+        </button>
+        <h2 class="modal-title title-glob">Order now</h2>
+        <form class="contacts-form modal-form">
+            <div class="contacts-field">
+                <label class="contacts-form-label required" for="username-modal">Name</label>
+                <input class="contacts-input" type="text" name="username" id="username-modal" placeholder="Tony"
+                    pattern="^[a-zA-Zа\s\-\.]{2,40}$" required />
+                <p class="contacts-error">Please enter your name</p>
+            </div>
+        
+            <div class="contacts-field">
+                <label class="contacts-form-label required" for="phone-modal">Phone</label>
+                <input class="contacts-input" type="tel" name="phone" id="phone-modal" placeholder="+1 234 567 8900"
+                    pattern="^\+[0-9\s]{14}$" required />
+                <p class="contacts-error">Please enter a valid phone number</p>
+            </div>
+        
+            <div class="contacts-field">
+                <label class="contacts-form-label" for="message-modal">Describe what you want</label>
+                <textarea class="contacts-textarea" name="message" id="message-modal" placeholder="Type your message..."
+                    maxlength="500" required></textarea>
+                <p class="contacts-error">Message cannot be empty</p>
+            </div>
+        
+            <button type="submit" class="btn contacts-btn modal-btn">
+                Submit
+            </button>
+        </form>
+    </div>
+</div>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init({
         duration: 700,
         easing: 'ease-out-cubic',
-        once: true,
+        once: false,
         offset: 90,
-        mirror: false,
+        mirror: true,
         disable: () =>
           window.matchMedia('(prefers-reduced-motion: reduce)').matches,
       });
